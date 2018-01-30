@@ -15,10 +15,13 @@ public class HelloSpringApp {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         
         // retrieve bean from spring container
-        Coach theCoach = contex.getBean("myCoach", Coach.class);
+        Coach coach = contex.getBean("myCoach", Coach.class);
         
         // call methods on the bean
-        System.out.println(theCoach.getDailyWorkout());
+        System.out.println(coach.getDailyWorkout());
+        
+        // let's call our new method for fortunes
+        System.out.println(coach.getDailyFortune());
         
         // close the contex
         contex.close();
