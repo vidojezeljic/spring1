@@ -1,9 +1,9 @@
 package spring1;
 
-/**
- *
- * @author vidojezeljic
- */
 public class Spring1 {
-
+    
+    public static void main(String[] args){
+        
+    }
+    
 }
